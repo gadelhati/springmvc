@@ -16,6 +16,7 @@ public class CarroController {
     @Autowired
     private CarroDao carroDao;
 
+    
     @RequestMapping(value = "/listarcarro", method = RequestMethod.GET)
     public ModelAndView listarCarros(ModelMap model) {
         model.addAttribute("carros", carroDao.getCarros());
